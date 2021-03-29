@@ -1,0 +1,509 @@
+/*
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Dangled  
+Description: A two-column, fixed-width design with a dark color scheme.
+Version    : 1.0
+Released   : 20120807
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background:white ;
+	font-family: Arial, Helvetica, #EE82EE;
+	font-size: 12px;
+      
+}
+
+#video
+{
+width:100%;
+height:100%;
+overflow:hidden;
+position:relative;
+	
+}
+video
+{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+width:auto;
+height:auto;
+min-width:100%;
+min-height:100%;
+transform:traslate(-50%,-50%);
+
+}
+ img
+{
+            margin: 80px;
+            -webkit-transition: -webkit-transform 4s; 
+            -moz-transition: -moz-transform 4s; 
+            -o-transition: -o-transform 4s; 
+            transition: transform 4s;
+
+
+         }
+         img:hover
+         {
+            -webkit-transform: rotate(180deg) scale(3, 3); 
+            -moz-transform: rotate(360deg) scale(2, 2);
+            -o-transform: rotate(360deg) scale(2, 2); 
+            transform: rotate(180deg) scale(3, 3);
+         }
+		 #logo {position: relative;
+            -webkit-animation: movingimage linear 5s 1s 2 alternate;
+            -moz-animation: movingimage linear 5s 1s 2 alternate;
+            animation: movingimage linear 5s 1s 2 alternate;}
+			@-webkit-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: -50px; top: 0px;}
+           25%  {opacity: 1; left: 0px; top: 0px;}
+            50%  {opacity: 0; left: 150px; top: 0px;}
+            /*75%  {opacity: 1; left: 100px; top: 50px;}*/
+            /*100% {opacity: 0; left: 50px; top: 0px;}*/
+         }
+         @-moz-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: -50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 0px;}
+            50%  {opacity: 0; left: 150px; top: 0px;}
+         /*   75%  {opacity: 1; left: 100px; top: 50px;}*/
+          /*  100% {opacity: 0; left: 50px; top: 0px;}*/
+         }
+         @keyframes movingimage
+         {
+            0%   {opacity: 0; left: -50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 0px;}
+            50%  {opacity: 0; left: 150px; top: 0px;}
+         /*   75%  {opacity: 1; left: 100px; top: 50px;}*/
+         /*   100% {opacity: 0; left: 50px; top: 0px;}*/
+         }
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 25;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2.4em;
+ color: pink;
+            -webkit-text-stroke: 2px #20B2AA; /* vendor prefix */
+            font-size: 400%; /* increasing the font size */
+
+}
+
+h3 {
+	font-size: 1.6em;
+
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 200%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #FFFF00;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img.border {
+	border: 500px solid #008080;
+}
+
+img.alignleft {
+	float: right;
+	margin-right: 100px;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 900px auto;
+}
+
+
+
+/* Header */
+
+#header {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	margin: 0;
+	padding: 0;
+	color: #7CFC00;
+	
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+ text-shadow: 5px 20px 3px #ffffff; /* add shadow */
+            font-size: 400%; /* increasing the font size */
+}
+
+#logo h1 {	
+
+	text-align: center;
+	letter-spacing: -3px;
+	text-transform: lowercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 70px;
+}
+
+#logo span {
+	letter-spacing: normal;
+	font-size: 27px;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #7CFC0;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	padding: 0;
+}
+
+#search form {
+	float: right;
+	height: 41px;
+	margin: 0;
+	padding: 40px 40px 0 0px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 220px;
+	height: 35px;
+	padding: 0px 10px;
+	border: none;
+	background: #636900;
+	line-height: 35px;
+	letter-spacing: 1px;
+	text-transform: lowercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 820px;
+	height: 60px;
+	margin: 40px auto 0 auto;
+	text-align: center;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	margin-right: 1px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu .current_page_item a {
+	background: #CE5372; 
+}
+
+#splash {
+	width: 1000px;
+	margin: 0px auto;
+}
+.post1{
+margin-top:20px;
+position:absolute;
+top :35%;
+left:12%;
+width:60%;
+transform:traslate(-50%,-50%);	
+
+}
+.post2 {
+margin-left:200px;
+margin-top:500px;
+margin-right:100px;
+
+	
+/*border-radius:300px;                
+         color-stop(15%,#FF7F50), color-stop(50%, #800080),
+            color-stop(75%, #FF7F50);
+         background: -moz-linear-gradient(
+            top left,#FF7F5015%,#FA8072 50%, #D8BFD8% );
+         background: linear-gradient(
+            135deg,#FF7F50 15%,#FA8072 50%,#D8BFD8 75% );*/
+}
+.post2 .title {
+
+	padding-top: 10px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	color: #FFFFFF;
+  box-shadow: -20px -20px 50px #87CEFA;
+}
+
+.post2 .title a {
+	border: none;
+	color: #FFFFFF;
+
+}
+
+.post2 .meta {
+	padding-bottom: 50px;
+	text-align: left;
+	font-family: Arial, Helvetica, #EE82EE;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.post2 .meta a {
+}
+.post2 h2:hover{
+ -webkit-animation: skew 3s 1 linear;
+      
+      animation: skew 1s 1 linear;
+}
+
+.post2 p:hover{
+font-size: 25px;
+color:#FFDAB9;
+
+}
+.post2 p{
+color:#FFDAB9;
+}
+
+.post {
+margin:200px;
+margin-top:180px;
+	}
+.post .title {
+
+	padding-top: 10px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	color: #FFFFFF;
+  box-shadow: -20px -20px 50px #87CEFA;
+}
+
+.post .title a {
+	border: none;
+	color: #FFFFFF;
+
+}
+.post h2:hover{
+ -webkit-animation: skew 3s 1 linear;
+      
+      animation: skew 1s 1 linear;
+}
+.post p{
+color:	#FFDAB9;
+}
+
+
+@-webkit-keyframes skew 
+    
+     {
+  from { -webkit-transform: skewX(0deg); }
+    
+        25% { -webkit-transform: skewX(45deg); }
+  
+          50% { -webkit-transform: skewX(0); }
+       
+     75% { -webkit-transform: skewX(-45deg); }
+          
+  to { -webkit-transform: skewX(0); }
+       
+  }
+    
+  
+  
+         @-keyframes skew 
+         {
+  
+ from { transform: skewX(0deg); }
+       
+     25% { transform: skewX(45deg); }
+     
+       50% { transform: skewX(0); }
+        
+    75% { transform: skewX(-45deg); }
+        
+    to { transform: skewX(0); }
+        
+ }
+
+.post .meta {
+	padding-bottom: 50px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.post .meta a {
+}
+
+.post p:hover{
+font-size: 25px;
+color:	#FFDAB9;
+
+}
+
+
+.post .entry {
+	text-align: justify;
+	margin-bottom: 20px;
+	padding: 150px 0px 0px 0px;
+}
+
+.links {
+	display: block;
+	width: 150px;
+	padding: 2px 0px 2px 0px;
+	background: #A53602;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+
+
+/* Footer */
+
+#footer {
+	width: 900px;
+	height: 140px;
+	margin: 0px auto;
+	
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 30px;
+	line-height: normal;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 12px;
+	color:	#FFDAB9;
+
+}
+
+#footer a {
+	text-decoration: underline;
+	color: 	#DDA0DD;
+ 
+}
+
+#about {
+	overflow: hidden;
+	width: 820px;
+	margin: 0px auto;
+	padding: 40px 40px;
+}
+
+#about .title {
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	color: #A26500;
+}
+
+
+.list-style1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-style1 li {
+	padding: 5px 0px;
+	border-top: 1px solid #EEEEEE;
+}
+
+.list-style1 a:hover {
+	text-decoration: underline;
+}
+
+.list-style1 .first {
+	border-top: none;
+
+}
+
+#two-column {
+	overflow: hidden
+	;
+}
+
+#column1 {
+	float: left;
+	width: 430px;
+}
+
+#column2 {
+	float: right;
+	width: 430px;
+}
+
+
+

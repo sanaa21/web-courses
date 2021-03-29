@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>WEB COURSES</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<style>
+body{
+margin:100;
+padding:100;
+}
+img{
+width:50;
+height:70;
+}
+
+ #footer {
+    border: 10px solid transparent;
+    padding: 15px;}
+	#text{
+
+margin-left: 170px;
+
+}
+</style>
+<script>
+var coin=new Audio();
+coin.src="coin.mp3";
+
+var web1Image;
+
+function changeHeaderBG(){
+window.setInterval( "updateTime()", 5000 );
+  	
+}
+
+function updateTime()
+{
+  var s =document.getElementById("pic1");
+		var num = Math.floor( 1 + Math.random() *9);
+		s.setAttribute( "src", "web" + num + ".jpg" );
+}
+
+
+
+function ch()
+{var x=window.prompt("please enter to your text ");
+ document.getElementById("textcolor").innerHTML=x;
+	
+
+}
+
+
+function ch1(){
+var x= document.getElementById("pic1");
+var y=window.prompt("please enter to your source: web1 ,web2 ,web3 ,web4 ,web5 ,web6 ,web7 ,web8 ,web9 ");
+x.setAttribute( "src",y+".jpg" );
+
+
+
+}
+function ch2(){
+var x= document.getElementById("vv");
+var y=window.prompt("please enter to your background : ww , zz ");
+x.setAttribute( "src",y+".mp4" );
+
+}
+
+	window.addEventListener( "load", changeHeaderBG, false );
+
+
+
+</script>
+
+</head>
+<body>
+
+
+
+
+	
+<div id="video">
+<video id="vv"  preload="auto" autoplay="autoplay" type=""video/mp4" src="ww.mp4" loop>
+
+</video></div>
+<input  id="text" type="button"  value="change background" onClick="ch2()">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#" onmousedown="coin.play()">Home</a></li>
+			<li><a href="#" onmousedown="coin.play()">Blog</a></li>
+			<li><a href="#" onmousedown="coin.play()">Photos</a></li>
+			<li><a href="#" onmousedown="coin.play()">About</a></li>
+			<li><a href="#" onmousedown="coin.play()">Links</a></li>
+			<li><a href="#" onmousedown="coin.play()">Contact</a></li>
+			
+		</ul>
+	</div>
+	
+	
+	<div id="header">
+
+		<div id="logo">
+			
+<h1><a href="#" id="textcolor">WEB</a>&nbsp;&nbsp;&nbsp;<span>COURSES</span></h1>
+</div>	
+	</div>
+	
+<div class="post1"><img   id="pic1" src="images/www.jpg" width="850" height="250" id="pic1"  alt="" /></div>
+<input  id="text" type="button"  value="change text" onClick="ch()">
+<input  id="text" type="button"  value="change image" onClick="ch1()">
+	<div class="post2">
+		
+			<h2 class="title" id="zz">Welcome TO WEB</h2>
+			<p>
+				Web technology is the development of the mechanism that allows two of more computer devices to communicate over a network. For instance, in a typical office setting, a number of computers plus additional devices such as printers may be interconnected via a network, allowing for quick and convenient transmission of information. The processes involved in web technology are complex and diverse, which is why major businesses employ whole departments to deal with the issue. Web technology has revolutionized communication methods and has made operations far more efficient. 
+			</p>
+			<ul class="list">
+				<li class="first"><a href="#">The students will have a theoretical knowledge and practical experiences in the fundamental aspects of designing and implementing a client-server web application.</a></li>
+				<li><a href="#">The students will learn how to download different templates for different applications like: resume template, school template, pharmacy template and change these templates using JavasScript to suit a particular application (his resume, a school, an university etc).</a></li>
+				<li><a href="#">Pharetra euismod eleifend morbi suspendisse placerat elementum urna</a></li>
+				<li><a href="#">The students will learn how to use JQuery and build applications using Jquery.</a></li>
+				<li class="last"><a href="#">Quis volutpat tempor varius lacinia egestas tincidunt diam</a></li>
+			</ul>
+		</div>
+		<div class="post">
+			<h2 class="title">Course Description</h2>
+			<p>  Introduction to Cascading Style Sheets: part 2, JavaScript:  Introduction to Scripting, if statement, array, objects, functions, dynamic html, event model, Document Object Model (DOM): Objects and Collections, events, introduction to canvas, xml, Jquery, Ajax-Enabled Rich Internet Applications with XML and JSON, Web Servers (Apache and IIS) and Database: SQL, MySQL, LINQ and Java DB.</p>
+			<div id="two-column">
+				<div id="column1">
+					<ul class="list">
+						<li class="first"><a href="#">Cascading Style Sheets (CSS3) Part 2: Text Shadows, Rounded Corners, Color, Box Shadows, Linear Gradients, Introducing Vendor Prefixes, Radial Gradients, (Optional: WebKit Only) Text Stroke, Multiple Background Images, (Optional: WebKit Only) Reflections,Image Borders, Animation; Selectors, Transitions and Transformations, transition and transform Properties, Skew, Transitioning Between Images, Downloading Web Fonts and the @font-face Rule, Flexible Box Layout Module and :nth-child Selectors, Multicolumn Layout, Media Queries,Web Resources</a></li>
+						<li><a href="#">JavaScript: Arrays,  JavaScript: Objects,  Document Object Model (DOM): Objects and Collections</a></li>
+									
+						</li>
+					</ul>
+				</div>
+				<div id="column2">
+					<ul class="list">
+						<li class="first"><a href="#">HTML5: introduction to canvas</a></li>
+						<li><a href="#">XML</a></li>
+						<li><a href="#">JavaScript:  Jquery</a></li>
+						<li><a href="#">Ajax-Enabled Rich Internet Applications with XML and JSON</a></li>
+						<li><a href="#">Web Servers (Apache and IIS)  </a></li>
+						<li class="last"><a href="#">Database: SQL, MySQL, LINQ and Java DB  </a></li>
+					<li><a href="#">JavaScript:  JavaScript Events (Load, click, mouseMove, mouseOver, mouseOut, Focus, blur,  submit and reset) and event bubbling.</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	
+
+		<p>&copy; Untitled. All rights reserved. Design by sanaa </a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+	</div>
+	 
+</div>
+</body>
+</html>
